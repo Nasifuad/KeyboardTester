@@ -15,6 +15,7 @@ main {
   background-color: rgba(137, 43, 226, 0.657);
   padding: 20px;
   text-align: center;
+  height: 100vh;
 }
 .container {
   display: flex;
@@ -23,20 +24,106 @@ main {
   gap: 40px;
   padding: 20px;
 }
-
+.display {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  gap: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 110px 0 rgba(221, 0, 0, 0.568);
+  overflow: hidden;
+}
 .keyboard {
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 110px 0 rgb(243, 5, 5);
 }
 .rows {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px;
   background-color: black;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .rows p {
-  width: 50px;
   background-color: black;
-  color: rgba(0, 234, 255, 0.989);
+  color: rgba(0, 195, 143, 0.662);
+  border: 1px solid rgb(0, 42, 251);
+  padding: 5px 10px;
+  height: 30px;
+  box-shadow: 0px 0px 5px 0px white;
+  border-radius: 5px;
+}
+.rows p:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 0px white;
+}
+.press {
+  background-color: black;
+  color: rgb(255, 0, 72) !important;
+  border: 1px solid rgb(0, 42, 251);
+  padding: 5px 10px;
+  height: 30px;
+  box-shadow: 0px 0px 5px 0px white;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 0, 183) !important;
+}
+
+.rows p:active {
+  transform: translate(10px, 10px);
+  transform: scale(0.8, 0.8);
+}
+h3 {
+  color: rgb(201, 0, 0);
+  background-color: rgba(0, 0, 0, 0.919);
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px white;
+}
+
+#prtsc,
+#pause,
+#scrlk,
+#ins,
+#home,
+#pgup,
+#del,
+#end,
+#pgdn {
+  width: 80px;
+}
+
+#space {
+  width: 250px;
+}
+#up {
+  transform: translateX(25px);
+}
+#left {
+  margin-left: 30px;
+}
+
+h3 {
+  position: absolute;
+  right: 0;
+}
+.row1 {
+  margin-bottom: 10px;
+}
+.row4,
+.row5 {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
 }

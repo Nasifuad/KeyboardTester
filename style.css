@@ -77,7 +77,16 @@ main {
   border-radius: 5px;
   border: 1px solid rgb(255, 0, 183) !important;
 }
-
+.double {
+  background-color: black;
+  color: rgb(0, 247, 255) !important;
+  border: 1px solid rgb(0, 42, 251);
+  padding: 5px 10px;
+  height: 30px;
+  box-shadow: 0px 0px 5px 0px white;
+  border-radius: 5px;
+  border: 1px solid rgb(48, 238, 0) !important;
+}
 .rows p:active {
   transform: translate(10px, 10px);
   transform: scale(0.8, 0.8);

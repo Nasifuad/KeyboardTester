@@ -51,12 +51,6 @@ addEventListener("keydown", (e) => {
   const press = document.getElementById(key);
 
   if (press) {
-    if (press.classList.contains("press")) {
-      press.classList.remove("press");
-      press.classList.add("double");
-    } else {
-      press.classList.remove("double");
-      press.classList.add("press");
-    }
+    press.classList.toggle("press");
   }
 });
